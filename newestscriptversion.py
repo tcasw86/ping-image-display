@@ -31,7 +31,7 @@ label.pack(expand=True, fill='both')
 def update_image(image_path):
     try:
         img = Image.open(image_path)
-        img = img.resize((screen_width, screen_height), Image.ANTIALIAS)
+        img = img.resize((screen_width, screen_height), Image.Resampling.LANCZOS)
         tk_img = ImageTk.PhotoImage(img)
         label.config(image=tk_img)
         label.image = tk_img
