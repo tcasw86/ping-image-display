@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/python3 /full/path/to/your_script.py
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Network Monitor
+Comment=Start monitor script on login
+
+#Replace /full/path/to/your_script.py with your actual script path.
